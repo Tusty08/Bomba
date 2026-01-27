@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOMBA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="bomb_icon-icons.com_70296.ico" type="image/png" />
+  </head>
+  <body>
+    <div class="div">
+      <form id="form" onsubmit="formSubmit()">
+        <input name="password" id="password" class="password" />
+        <button type="submit" id="submit">DESARMAR</button>
+      </form>
+
+      <form id="formTwo" class="hidden" onsubmit="formTwoSubmited()">
+        <span>HEXADEXIMAL AREA</span>
+        <input name="password" id="passwordTwo" class="password" />
+        <button type="submit" id="submit">DESARMAR</button>
+      </form>
+
+      <div id="answer" class="hidden"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
