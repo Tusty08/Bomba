@@ -16,14 +16,23 @@ formTwo.addEventListener("submit", (event) => {
 function formSubmit() {
   if (password.value !== "senha") {
     alert("Senha incorreta");
-  } else alert("Senha Correta");
-  form.classList.add("hidden");
-  formTwo.classList.remove("hidden");
+  } else if (password.value === "easter-egg") {
+    alert("Olha só ma oi");
+  } else {
+    alert("Senha Correta");
+    form.classList.add("hidden");
+    formTwo.classList.remove("hidden");
+  }
 }
 
 function formTwoSubmited() {
   if (passwordTwo.value !== "verde") {
     alert("Senha incorreta");
-  } else formTwo.classList.add("hidden");
-  answer.classList.remove("hidden");
+  } else if (passwordTwo.value === "easter-egg  ") {
+    alert("Senha incorreta");
+  } else {
+    alert("Senha Correta");
+    formTwo.classList.add("hidden");
+    answer.classList.remove("hidden");
+  }
 }
