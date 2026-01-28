@@ -5,9 +5,13 @@ const formTwo = document.querySelector("#formTwo");
 const passwordTwo = document.querySelector("#passwordTwo");
 const answer = document.querySelector("#answer");
 
-document.querySelector("#form").addEventListener("submit", (event) => {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
-}
+})
+
+formTwo.addEventListener("submit", (event) => {
+  event.preventDefault();
+})
 
 function formSubmit() {
   if (password.value !== "social") {
@@ -36,6 +40,7 @@ function formTwoSubmited() {
 }
 
 console.log("As vezes a vida pode dar voltas    ");
+
 
 
 
