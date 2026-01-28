@@ -5,7 +5,7 @@ const formTwo = document.querySelector("#formTwo");
 const passwordTwo = document.querySelector("#passwordTwo");
 const answer = document.querySelector("#answer");
 
-form.addEventListener('submit', (event) => {
+document.querySelector("#form").addEventListener("submit", (event) => {
   event.preventDefault();
 }
 
@@ -36,5 +36,6 @@ function formTwoSubmited() {
 }
 
 console.log("As vezes a vida pode dar voltas    ");
+
 
 
