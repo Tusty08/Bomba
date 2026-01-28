@@ -1,3 +1,10 @@
+const form = document.querySelector("#form");
+const password = document.querySelector("#password");
+const button = document.querySelector("#submit");
+const formTwo = document.querySelector("#formTwo");
+const passwordTwo = document.querySelector("#passwordTwo");
+const answer = document.querySelector("#answer");
+
 function formSubmit() {
   if (password.value !== "social") {
     alert("Senha incorreta");
@@ -25,3 +32,4 @@ function formTwoSubmited() {
 }
 
 console.log("As vezes a vida pode dar voltas    ");
+
