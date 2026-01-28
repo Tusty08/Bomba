@@ -1,22 +1,8 @@
-const form = document.querySelector("#form");
-const password = document.querySelector("#password");
-const button = document.querySelector("#submit");
-const formTwo = document.querySelector("#formTwo");
-const passwordTwo = document.querySelector("#passwordTwo");
-const answer = document.querySelector("#answer");
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-});
-
-formTwo.addEventListener("submit", (event) => {
-  event.preventDefault();
-});
-
 function formSubmit() {
-  if (password.value !== "senha") {
+  if (password.value !== "social") {
     alert("Senha incorreta");
-  } else if (password.value === "easter-egg") {
+    password.value = "";
+  } else if (password.value === "easteregg") {
     alert("Olha só ma oi");
   } else {
     alert("Senha Correta");
@@ -26,8 +12,9 @@ function formSubmit() {
 }
 
 function formTwoSubmited() {
-  if (passwordTwo.value !== "verde") {
+  if (passwordTwo.value !== "636f736d6f73") {
     alert("Senha incorreta");
+    password.value = "";
   } else if (passwordTwo.value === "easter-egg  ") {
     alert("Senha incorreta");
   } else {
@@ -36,3 +23,5 @@ function formTwoSubmited() {
     answer.classList.remove("hidden");
   }
 }
+
+console.log("As vezes a vida pode dar voltas    ");
