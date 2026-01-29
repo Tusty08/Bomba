@@ -7,11 +7,11 @@ const answer = document.querySelector("#answer");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-})
+});
 
 formTwo.addEventListener("submit", (event) => {
   event.preventDefault();
-})
+});
 
 function formSubmit() {
   if (password.value !== "social") {
@@ -40,6 +40,8 @@ function formTwoSubmited() {
 }
 
 console.log("As vezes a vida pode dar voltas    ");
+
+
 
 
 
