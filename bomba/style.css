@@ -1,14 +1,16 @@
 body {
   background-color: black;
   color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .div {
   width: 400px;
   display: flex;
-  margin: 10%;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
   border: 2px solid rgb(49, 37, 37);
   border-radius: 8px;
@@ -65,3 +67,4 @@ span {
   height: 200px;
   background-color: rgb(255, 251, 0);
 }
+
